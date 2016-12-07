@@ -1,0 +1,158 @@
+[
+  {
+    "id": 1,
+    "name": "Tentrox-R1_1235",
+    "username": "",
+    "timestarted": "1478763233729",
+    "state": "Pending",
+	"metrics": {
+      "test": 64,
+      "maintainability": 53,
+      "security": 64,
+      "workmanship": 72
+    },
+    "release": {
+      "date": "1478540296482"
+    },
+	"unitTest": {
+      "passed": 123,
+      "failed": 53,
+      "coverage": 64
+    },
+	"functionalTest": {
+      "passed": 64,
+      "failed": 234,
+      "coverage": 35
+    }
+  },
+  {
+    "id": 2,
+    "name": "432462",
+    "username": "Jtuck",
+    "timestarted": "1478720113067",
+    "state": "Running",
+	"metrics": {
+      "test": 64,
+      "maintainability": 53,
+      "security": 64,
+      "workmanship": 72
+    },
+    "release": {
+      "date": 1478540296482
+    },
+	"unitTest": {
+      "passed": 1100,
+      "failed": 100,
+      "coverage": 45
+    },
+	"functionalTest": {
+      "passed": 30,
+      "failed": 200,
+      "coverage": 75
+    }
+  },
+  {
+    "id": 3,
+    "name": "432461",
+    "username": "samy",
+    "timestarted": "1478540296482",
+    "state": "Rejected",
+	"metrics": {
+      "test": 45,
+      "maintainability": 53,
+      "security": 64,
+      "workmanship": 72
+    },
+    "release": {
+      "date": 1478540296482
+    },
+	"unitTest": {
+      "passed": 1123,
+      "failed": 345,
+      "coverage": 56
+    },
+	"functionalTest": {
+      "passed": 456,
+      "failed": 300,
+      "coverage": 40
+    }
+  },
+  {
+    "id": 4,
+    "name": "Tentrox-R1_1234",
+    "username": "",
+    "timestarted": "1478540296482",
+    "state": "Complete",
+	"metrics": {
+      "test": 64,
+      "maintainability": 53,
+      "security": 64,
+      "workmanship": 72
+    },
+    "release": {
+      "date": 1478540296482
+    },
+	"unitTest": {
+      "passed": 64,
+      "failed": 53,
+      "coverage": 35
+    },
+	"functionalTest": {
+      "passed": 64,
+      "failed": 53,
+      "coverage": 80
+    }
+  },
+  {
+    "id": 5,
+    "name": "432460",
+    "username": "samy",
+    "timestarted": "1478540296482",
+    "state": "Rejected",
+	"metrics": {
+      "test": 64,
+      "maintainability": 53,
+      "security": 64,
+      "workmanship": 72
+    },
+    "release": {
+      "date": 1478540296482
+    },
+	"unitTest": {
+      "passed": 1234,
+      "failed": 45,
+      "coverage": 78
+    },
+	"functionalTest": {
+      "passed": 146,
+      "failed": 49,
+      "coverage": 59
+    }
+  },
+  {
+    "id": 6,
+    "name": "432459",
+    "username": "samy",
+    "timestarted": "1478540296482",
+    "state": "Accepted",
+	"metrics": {
+      "test": 64,
+      "maintainability": 53,
+      "security": 64,
+      "workmanship": 72
+    },
+    "release": {
+      "date": 1478540296482
+    },
+	"unitTest": {
+      "passed": 444,
+      "failed": 123,
+      "coverage": 80
+    },
+	"functionalTest": {
+      "passed": 789,
+      "failed": 234,
+      "coverage": 76
+    }
+  }
+]

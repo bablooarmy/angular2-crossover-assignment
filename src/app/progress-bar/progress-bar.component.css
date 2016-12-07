@@ -1,0 +1,20 @@
+.progress {
+  height: 30px;
+  background-color: #F6CBAE;
+}
+.progress .determinate {
+  background-color: #C6DFB5;
+}
+.progress .percent-value {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+}
+.progress .percent-text {
+  position: absolute;
+  top: 15px;
+  text-align: center;
+  width: 100%;
+  font-size: 11px;
+}

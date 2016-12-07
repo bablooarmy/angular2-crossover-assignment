@@ -1,0 +1,19 @@
+.btn.btn-result{
+  font-size: 13px;
+  text-transform: capitalize;
+  padding: 0 5px;
+  margin-top: 15px;
+}
+.btn-result .left{
+  margin-right: 5px;
+}
+.header{
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.body-small{
+  font-size: 14px;
+}
+.body-large{
+  font-size: 24px;
+}

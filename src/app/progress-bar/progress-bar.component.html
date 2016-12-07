@@ -1,0 +1,12 @@
+<div class="progress">
+    <div class="determinate" [ngStyle]="{'width': progressBarData.percent+'%'}"></div>
+    <div class="percent-value" [ngClass]="{
+                    'green-text text-darken-4': progressBarData.percent > 50,
+                    'red-text text-darken-4': progressBarData.percent <= 50
+                  }">
+      <span>{{progressBarData.percent}}%</span>
+    </div>
+    <div class="percent-text black-text text-darken">
+      <span>{{progressBarData.text}}</span>
+    </div>
+</div>

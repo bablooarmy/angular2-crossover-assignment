@@ -1,0 +1,97 @@
+/* You can add global styles to this file, and also import other style files */
+.red-color {
+  color: #BA0003;
+}
+.red-gradient {
+  border: 2px solid #BA0003;
+  background: #FBE1E1; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(-90deg, #FFFFFF, #FBE1E1); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(-90deg, #FFFFFF, #FBE1E1); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(-90deg, #FFFFFF, #FBE1E1); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(-90deg, #FFFFFF, #FBE1E1); /* Standard syntax (must be last) */
+}
+.blue-color {
+  color: #4681B5;
+}
+.blue-gradient {
+  border: 2px solid #4681B5;
+  background: #EAEFF7; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(-90deg, #FFFFFF, #EAEFF7); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(-90deg, #FFFFFF, #EAEFF7); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(-90deg, #FFFFFF, #EAEFF7); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(-90deg, #FFFFFF, #EAEFF7); /* Standard syntax (must be last) */
+}
+.green-color {
+  color: #5A9036;
+}
+.green-gradient {
+  border: 2px solid #5A9036;
+  background: #EBF1E9; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(-90deg, #FFFFFF, #EBF1E9); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(-90deg, #FFFFFF, #EBF1E9); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(-90deg, #FFFFFF, #EBF1E9); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(-90deg, #FFFFFF, #EBF1E9); /* Standard syntax (must be last) */
+}
+.grey-color {
+  color: #CFCFCF;
+}
+.grey-gradient {
+  border: 2px solid #CFCFCF;
+  background: #EAEFF7; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(-90deg, #FFFFFF, #EAEFF7); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(-90deg, #FFFFFF, #EAEFF7); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(-90deg, #FFFFFF, #EAEFF7); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(-90deg, #FFFFFF, #EAEFF7); /* Standard syntax (must be last) */
+}
+.row .col5 {
+    float: left;
+    box-sizing: border-box;
+    padding: 0 0.75rem;
+    min-height: 1px;
+}
+.col5.m1 {
+    width: 20%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+}
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+.material-icons.md-75 { font-size: 75px; }
+@media only screen and (min-width: 993px){
+  .container.custom {
+      width: 85%;
+  }
+}
+
+@media only screen and (min-width: 601px){
+  .container.custom {
+      width: 85%;
+  }
+}
+
+.text-center{
+  text-align: center;
+}
+.margin-top-26{
+  margin-top: 26px;
+}
+.margin-top-5{
+  margin-top: 5px;
+}
+.box-shadow-5{
+  box-shadow: 5px 5px 5px #ACAEAD;
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+.row{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px !important;
+}
+.active .metric-status{
+  display: none;
+}

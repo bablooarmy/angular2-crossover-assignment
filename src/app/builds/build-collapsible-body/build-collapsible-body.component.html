@@ -1,0 +1,140 @@
+<div class="row">
+  <div class="col5 m1">
+    <div class="cursor-pointer" [ngClass]="{
+                    'grey-color grey-gradient': build.state === 'Pending',
+                    'blue-color blue-gradient': build.state === 'Running',
+                    'red-color red-gradient': build.state === 'Rejected',
+                    'green-color green-gradient box-shadow-5': (build.state === 'Complete' || build.state === 'Accepted')
+                  }">
+      <span class="card-title">Metrics</span>
+      <div class="row no-margin">
+        <div class="col l6 m12 text-center margin-top-5">
+          <app-metrics-arrow [width]="48" [height]="48"
+                              [rotation]="metricsTestRotation"
+                              [textToShow]="metricsTestText"
+                              [font]="metricsTestFont"
+                              [fontColor]="metricsTestFontColor"
+                              [fillColor]="metricsTestFillColor"
+                              [strokeColor]="metricsTestStrokeColor"></app-metrics-arrow>
+          <div class="card-metrics-title black-text text-darken-1">Test</div>
+        </div>
+        <div class="col l6 m12 text-center margin-top-5">
+          <app-metrics-arrow [width]="48" [height]="48"
+                              [rotation]="metricsMaintainRotation"
+                              [textToShow]="metricsMaintainText"
+                              [font]="metricsMaintainFont"
+                              [fontColor]="metricsMaintainFontColor"
+                              [fillColor]="metricsMaintainFillColor"
+                              [strokeColor]="metricsMaintainStrokeColor"></app-metrics-arrow>
+          <div class="card-metrics-title black-text text-darken-1">Maintainability</div>
+        </div>
+      </div>
+      <div class="row no-margin">
+        <div class="col l6 m12 text-center">
+          <app-metrics-arrow [width]="48" [height]="48"
+                              [rotation]="metricsSecurityRotation"
+                              [textToShow]="metricsSecurityText"
+                              [font]="metricsSecurityFont"
+                              [fontColor]="metricsSecurityFontColor"
+                              [fillColor]="metricsSecurityFillColor"
+                              [strokeColor]="metricsSecurityStrokeColor"></app-metrics-arrow>
+          <div class="card-metrics-title black-text text-darken-1">Security</div>
+        </div>
+        <div class="col l6 m12 text-center">
+          <app-metrics-arrow [width]="48" [height]="48"
+                              [rotation]="metricsWorkmanRotation"
+                              [textToShow]="metricsWorkmanText"
+                              [font]="metricsWorkmanFont"
+                              [fontColor]="metricsWorkmanFontColor"
+                              [fillColor]="metricsWorkmanFillColor"
+                              [strokeColor]="metricsWorkmanStrokeColor"></app-metrics-arrow>
+          <div class="card-metrics-title black-text text-darken-1">Workmanship</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col5 m1">
+    <div class="cursor-pointer" [ngClass]="{
+                    'grey-color grey-gradient': (build.state === 'Pending' || build.state === 'Running' || build.state === 'Rejected'),
+                    'green-color green-gradient box-shadow-5': (build.state === 'Complete' || build.state === 'Accepted')
+                  }">
+      <span class="card-title">Build</span>
+      <div class="row no-margin">
+        <div class="col l6 m12 text-center">
+          <i class="material-icons md-75 blue-text text-darken-3">desktop_windows</i>
+          <span class="card-metrics-title blue-text text-darken-3">Debug</span>
+        </div>
+        <div class="col l6 m12 text-center">
+          <i class="material-icons md-75 blue-text text-darken-3">desktop_windows</i>
+          <span class="card-metrics-title blue-text text-darken-3">Release</span>
+        </div>
+      </div>
+      <div class="row no-margin">
+        <div class="col m12 text-center margin-top-26">
+          <span class="black-text text-darken-1">{{build.release.date | date:'h:mma - M/d/y' | lowercase}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col5 m1">
+    <div class="cursor-pointer" [ngClass]="{
+                    'grey-color grey-gradient': (build.state === 'Pending' || build.state === 'Running' || build.state === 'Rejected'),
+                    'green-color green-gradient box-shadow-5': (build.state === 'Complete' || build.state === 'Accepted')
+                  }">
+      <span class="card-title">Unit Test</span>
+      <div class="row no-margin">
+        <div class="col l6 m12">
+          <app-metrics-pie-chart [width]="93"
+                                  [height]="93"
+                                  [data]="unitTestPieData"
+                                  [labels]="unitTestPieLabels"
+                                  [colors]="unitTestPieColors"
+                                  [strokeColors]="unitTestPieStrokeColors"></app-metrics-pie-chart>
+        </div>
+        <div class="col l6 m12">
+          <span class="test-percent unit-percent-color">{{unitTestData[0]}}%</span>
+          <span class="test-result">test passed</span>
+        </div>
+      </div>
+      <div class="row no-margin">
+        <div class="col m12 padding-right-left-10">
+          <app-progress-bar [progressBarData]="unitTestProgressBarData"></app-progress-bar>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col5 m1">
+    <div class="cursor-pointer" [ngClass]="{
+                    'grey-color grey-gradient': (build.state === 'Pending' || build.state === 'Running' || build.state === 'Rejected'),
+                    'green-color green-gradient box-shadow-5': (build.state === 'Complete' || build.state === 'Accepted')
+                  }">
+      <span class="card-title">Functional Test</span>
+      <div class="row no-margin">
+        <div class="col l6 m12">
+          <app-metrics-pie-chart [width]="93"
+                                  [height]="93"
+                                  [data]="functionalTestPieData"
+                                  [labels]="functionalTestPieLabels"
+                                  [colors]="functionalTestPieColors"
+                                  [strokeColors]="functionalTestPieStrokeColors"></app-metrics-pie-chart>
+        </div>
+        <div class="col l6 m12">
+          <span class="test-percent functional-percent-color">{{functionalTestData[0]}}%</span>
+          <span class="test-result">test passed</span>
+        </div>
+      </div>
+      <div class="row no-margin">
+        <div class="col m12 padding-right-left-10">
+          <app-progress-bar [progressBarData]="functionalTestProgressBarData"></app-progress-bar>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col5 m1">
+    <app-build-result-container [header]="buildResultHeader"
+                                [bodySmall]="buildResultBodySmall"
+                                [bodyLarge]="buildResultBodyLarge"
+                                [buttonLabel]="buildResultButtonLabel"
+                                [buttonIcon]="buildResultButtonIcon"></app-build-result-container>
+  </div>
+</div>

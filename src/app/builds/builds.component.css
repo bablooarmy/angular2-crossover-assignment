@@ -1,0 +1,17 @@
+.collapsible-header{
+  border: none;
+  background: none;
+}
+.collapsible-body{
+  border: none;
+  padding: 0 1rem;
+  margin-bottom: 20px;
+}
+li{
+  display: block;
+  margin: 0px 0px 10px 0px;
+}
+ul.collapsible{
+  border: none;
+  box-shadow: none;
+}

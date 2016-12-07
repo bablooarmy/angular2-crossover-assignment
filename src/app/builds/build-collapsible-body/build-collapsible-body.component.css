@@ -1,0 +1,28 @@
+.card-title {
+  font-weight: bold;
+  padding-left: 5px;
+}
+.card-metrics-title {
+  font-size: 13px;
+  font-weight: normal;
+}
+.padding-right-left-10{
+  padding: 0 10px;
+}
+.functional-percent-color{
+  color: #C59624;
+}
+.unit-percent-color{
+  color: #A5C74D;
+}
+.test-percent{
+  font-size: 32px;
+  font-weight: bold;
+}
+.test-result{
+  font-size: 12px;
+  color: #000000;
+}
+.no-margin{
+  margin: 0px;
+}

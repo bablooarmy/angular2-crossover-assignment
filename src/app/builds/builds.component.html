@@ -1,0 +1,32 @@
+<p>
+  Displaying {{ builds.length }} builds.
+</p>
+<div class="row no-margin">
+  <div class="col l3 m3">Changelist/Build</div>
+  <div class="col l1 m1">Owner</div>
+  <div class="col l2 m3">Time Started</div>
+  <div class="col l1 m1">State</div>
+  <div class="col l1 m1">Metrics</div>
+  <div class="col l1 m1">Build</div>
+  <div class="col l1 m1">Unit Test</div>
+  <div class="col l2 m1">Functional Test</div>
+</div>
+<ul materialize="collapsible" class="collapsible" data-collapsible="accordion">
+  <li *ngFor="let build of builds"
+      [ngClass]="{'grey-gradient': build.state === 'Pending',
+                  'grey-color': build.state === 'Pending',
+                  'blue-gradient': build.state === 'Running',
+                  'blue-color': build.state === 'Running',
+                  'red-gradient': build.state === 'Rejected',
+                  'red-color': build.state === 'Rejected',
+                  'green-gradient': (build.state === 'Complete' || build.state === 'Accepted'),
+                  'green-color': (build.state === 'Complete' || build.state === 'Accepted')
+                  }">
+    <div class="collapsible-header">
+      <app-build-collapsible-header [build]="build"></app-build-collapsible-header>
+    </div>
+    <div class="collapsible-body">
+      <app-build-collapsible-body [build]="build"></app-build-collapsible-body>
+    </div>
+  </li>
+</ul>

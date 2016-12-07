@@ -1,0 +1,39 @@
+<div class ="row no-margin">
+  <div class="col l3 m3">
+    <i class="material-icons">{{ iconToShow }}</i>
+    <span>{{ build.name }}</span>
+  </div>
+  <div class="col l1 m1">{{ build.username }}</div>
+  <div class="col l2 m3">{{ build.timestarted | date:'M/d/y h:mma' | lowercase}}</div>
+  <div class="col l1 m1">{{ build.state }}</div>
+  <div class="col l1 m1">
+    <i [ngClass]="{
+                    'grey-color': build.state === 'Pending',
+                    'blue-color': build.state === 'Running',
+                    'red-color': build.state === 'Rejected',
+                    'green-color': (build.state === 'Complete' || build.state === 'Accepted')
+                  }"
+        class="material-icons metric-status">filter_frames</i>
+  </div>
+  <div class="col l1 m1">
+    <i [ngClass]="{
+                    'grey-color': (build.state === 'Pending' || build.state === 'Running' || build.state === 'Rejected'),
+                    'green-color': (build.state === 'Complete' || build.state === 'Accepted')
+                  }"
+        class="material-icons metric-status">filter_frames</i>
+  </div>
+  <div class="col l1 m1">
+    <i [ngClass]="{
+                    'grey-color': (build.state === 'Pending' || build.state === 'Running' || build.state === 'Rejected'),
+                    'green-color': (build.state === 'Complete' || build.state === 'Accepted')
+                  }"
+        class="material-icons metric-status">filter_frames</i>
+  </div>
+  <div class="col l2 m1">
+    <i [ngClass]="{
+                    'grey-color': (build.state === 'Pending' || build.state === 'Running' || build.state === 'Rejected'),
+                    'green-color': (build.state === 'Complete' || build.state === 'Accepted')
+                  }"
+        class="material-icons metric-status">filter_frames</i>
+  </div>
+</div>
